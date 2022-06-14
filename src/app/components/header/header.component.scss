@@ -5,22 +5,42 @@ header {
   width: 100vw;
   height: 3.5rem;
   background-color: #000;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid aqua;
 
   .logo {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
 
     img {
       width: 100%;
+      border-radius: 50%;
     }
   }
 
   nav ul {
-    margin-right: 2rem;
+    // margin-right: 2rem;
 
-    li a {
-      font-size: 1.1rem;
-      margin-right: 1rem;
+    li {
+        width: 6rem;
+        text-align: center;
+
+      a {
+        font-size: 1.1rem !important;
+        margin-right: 1rem;
+        width: 100%;
+        text-transform: capitalize;
+        transition: all 350ms ease;
+
+        &:hover {
+          text-transform: uppercase;
+        }
+      }
     }
+
+
   }
+
+
 }
+

@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h1 class="title">Angular Concepts</h1>
+
+  <div class="section">
+    <h2 class="title">
+     title : {{ data.title }}
+    </h2>
+    <img class="image" [src]="data.logoAngular" alt="">
+    <main>
+      <p class="content">One of te Core Features of Angular
+        is the automatic reflecting in the View(html) anything we do with or to the
+        Model(data). Angular keeps track of the changes we make and
+        updates only thosee parts of the page and applicaation by it self.
+        All of this Aangular does behind the scenes in a transparant but reasonable secure way.
+      </p>
+     <label for="titleInput">title : </label> <input type="text" (keyup)="onKeyUp(titleInput.value)"
+      class="demo" [value]="data.title" #titleInput />
+    </main>
+  </div>
+</div>
+
+
