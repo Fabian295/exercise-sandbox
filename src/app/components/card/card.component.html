@@ -2,15 +2,15 @@
 <ul >
   <li class="card" >
     <div class="card__div-image">
-      <img [src]="subject.imgUrl" alt="" class="card__img">
+      <img [src]="topic.imgUrl" alt="" class="card__img">
     </div>
-    <h2 class="card__title">{{subject.title}}</h2>
-    <p class="card__content">
-      {{ subject.description }}
+    <h2 class="card__title">{{ cardIndex + '. ' + topic.title}}</h2>
+    <p class="card__content"  >
+      {{ topic.description }}
     </p>
     <div class="card__footer">
       <div class="level">
-        <span>{{ subject.level }}</span>
+        <span>{{ topic.level }}</span>
       </div>
       <div class="card__footer__price"></div>
       <button (click)="getStarted()" class="btn">Get Started...</button>

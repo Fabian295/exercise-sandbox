@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ConceptsComponent } from './components/concepts/concepts.component';
 import { CardComponent } from './components/card/card.component';
+import { RxjsComponent } from './components/rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CardComponent } from './components/card/card.component';
     HomeComponent,
     HeaderComponent,
     ConceptsComponent,
-    CardComponent
+    CardComponent,
+    RxjsComponent
   ],
   imports: [
     BrowserModule,

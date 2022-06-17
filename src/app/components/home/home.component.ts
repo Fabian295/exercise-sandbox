@@ -11,17 +11,20 @@ export class HomeComponent implements OnInit {
 
   // subjects: Subject[] = [];
 
-  firstCard = Subjects[0];
-  subTwo = Subjects[1];
-  subThree = Subjects[2];
-  subFour = Subjects[3];
-  subFive = Subjects[4];
-  subSix = Subjects[5];
-  subSeven = Subjects[6];
-  lastCard = Subjects[7];
+  topics = Subjects
+
+  // firstCard = Subjects[0];
+  // subTwo = Subjects[1];
+  // subThree = Subjects[2];
+  // subFour = Subjects[3];
+  // subFive = Subjects[4];
+  // subSix = Subjects[5];
+  // subSeven = Subjects[6];
+  // lastCard = Subjects[7];
 
   constructor() {
-    console.log(this.firstCard)
+    // console.log(this.firstCard)
+    // console.log(this.topics)
   }
 
   ngOnInit(): void {
@@ -31,5 +34,10 @@ export class HomeComponent implements OnInit {
   //   this.subjects = Subjects[0];
   //   console.log(this.subjects)
   // }
+
+
+  onTopicSelect(subject: Subject) {
+    console.log('cardClick: Bubled to Card!', subject)
+  }
 
 }

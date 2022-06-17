@@ -4,15 +4,16 @@
 
   <div class="section">
     <h2 class="title">
-     title : {{ data.title }}
+     <label for="textTitle">title :</label>
+     <input id="textTitle" type="text" value="{{ data.title }}">
     </h2>
     <img class="image" [src]="data.logoAngular" alt="">
     <main>
       <p class="content">One of te Core Features of Angular
         is the automatic reflecting in the View(html) anything we do with or to the
         Model(data). Angular keeps track of the changes we make and
-        updates only thosee parts of the page and applicaation by it self.
-        All of this Aangular does behind the scenes in a transparant but reasonable secure way.
+        updates only thosee parts of the page by it self.
+        Angular does all of this  behind the scenes but in a transparant and reasonable secure way.
       </p>
      <label for="titleInput">title : </label> <input type="text" (keyup)="onKeyUp(titleInput.value)"
       class="demo" [value]="data.title" #titleInput />

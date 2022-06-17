@@ -1,7 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Subjects } from 'db-data';
-import { Subject } from 'src/app/interfaces/Subject';
-// import { Subject } from 'src/app/interfaces/Subject';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import '../../../../db-data';
+import { Subject } from '../../interfaces/Subject';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-card',
@@ -11,13 +12,19 @@ import { Subject } from 'src/app/interfaces/Subject';
 export class CardComponent implements OnInit {
 
   @Input()
-  subject!: Subject;
+  topic!: Subject;
+
+  @Input()
+  cardIndex!: number;
+
+  @Output()
+  topicSelect = new EventEmitter<Subject>();
   // card-title:string = Subjects[0].title;
 
   // imgUrl: string = 'assets/logo_ang_bllue-bg.jpg';
 
   // subjects: Subject[] = [] ;
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +32,7 @@ export class CardComponent implements OnInit {
 
   getStarted() {
     console.log('event:', 'clicked')
+    this.topicSelect.emit(this.topic)
   }
 
 }

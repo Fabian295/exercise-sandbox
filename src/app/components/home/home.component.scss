@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: stretch;
   flex-wrap: wrap;
   width: 90vw;
   margin: 2rem auto;
@@ -16,5 +17,5 @@ body {
 
 li {
   margin: 1rem;
-
+  // display: inline-block;
 }

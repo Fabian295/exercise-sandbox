@@ -15,31 +15,36 @@
 
   </div> -->
 
-  <ul class="cards" >
-    <li class="card">
-      <app-card [subject]="firstCard"></app-card>
+  <ul class="cards">
+    <li  *ngFor="let card of topics;index as i"
+      class="card">
+      <app-card (topicSelect)="onTopicSelect($event)"
+      [topic]="card"
+      [cardIndex]="i + 1"
+      >
+      </app-card>
+    </li>
+    <!-- <li class="card">
+      <app-card (topicSelect)="onTopicSelect($event)" [subject]="subTwo"></app-card>
     </li>
     <li class="card">
-      <app-card [subject]="subTwo"></app-card>
+      <app-card  (topicSelect)="onTopicSelect($event)" [subject]="subThree"></app-card>
     </li>
     <li class="card">
-      <app-card  [subject]="subThree"></app-card>
+      <app-card (topicSelect)="onTopicSelect($event)" [subject]="subFour"></app-card>
     </li>
     <li class="card">
-      <app-card [subject]="subFour"></app-card>
+      <app-card  (topicSelect)="onTopicSelect($event)" [subject]="subFive"></app-card>
     </li>
     <li class="card">
-      <app-card  [subject]="subFive"></app-card>
+      <app-card (topicSelect)="onTopicSelect($event)" [subject]="subSix"></app-card>
     </li>
     <li class="card">
-      <app-card [subject]="subSix"></app-card>
+      <app-card (topicSelect)="onTopicSelect($event)" [subject]="subSeven"></app-card>
     </li>
     <li class="card">
-      <app-card [subject]="subSeven"></app-card>
-    </li>
-    <li class="card">
-      <app-card [subject]="lastCard"></app-card>
-    </li>
+      <app-card (topicSelect)="onTopicSelect($event)" [subject]="lastCard"></app-card>
+    </li> -->
   </ul>
 
 

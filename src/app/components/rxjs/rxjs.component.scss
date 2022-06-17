@@ -1,0 +1,58 @@
+.section {
+  width: 90vw;
+  margin: 1rem auto;
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+h1 {
+  color: #fff;
+
+  > span {
+    color: hsl(316, 84%, 39%);
+  }
+}
+
+
+ul {
+  display: block;
+  list-style-type: square;
+  line-height: 1.7;
+
+}
+
+h3 {
+  margin: 1rem 0  1.5rem 0.5rem;
+}
+
+.rxjs {
+  color: #b51088;
+}
+
+p, li {
+  color: hsl(0, 0%, 72%);
+  margin-left: .5rem;
+}
+
+li span {
+  color: #fff;
+  font-style: italic;
+}
+
+li.reactive {
+  list-style: circle;
+  color: hsl(316, 84%, 39%);
+  margin-bottom: 1rem;
+
+  p strong {
+    color: #fff;
+  }
+
+  span.reactive {
+    font-style: normal;
+
+  }
+}
