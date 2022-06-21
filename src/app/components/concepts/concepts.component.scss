@@ -1,5 +1,13 @@
 
 .container {
+    width: 96vw;
+    margin: 1rem auto;
+    background-color: #515151;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.section {
   width: 90vw;
   margin: 1rem auto;
   background-color: #000;
@@ -59,4 +67,116 @@ main {
   text-align: left;
   margin: 2rem auto;
   line-height: 1.8;
+}
+
+.ngcls {
+  color: aqua;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.card {
+   width: max(28%, 10rem);
+    padding: 0.25rem;
+    // padding-bottom: 1rem;
+    border: 1px solid #fff;
+    margin: 1rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      display: inline-block;
+      height: 40%;
+      object-fit: cover;
+    }
+
+    &__title {
+      color: #fff;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    &__body {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+
+      padding: 1rem;
+      text-align: center;
+    }
+
+  //  &:nth-child(odd) .card__body {
+  //     background-color: rgb(144, 127, 239);;
+
+  //   }
+}
+
+// .card h3.even {
+//   color: blue;
+//   font-size: 1.75rem;
+// }
+
+// .card p.card__body.even {
+//   background-color: blue;
+// }
+.btn {
+  width: 10rem;
+  padding: 0.3rem 1.5rem;
+  color: #fff;
+  background-color: darkblue;
+  border: 3px solid #fff;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
+  transition: color 359ms ease, border-color 359ms ease;
+
+  &:hover {
+    border-color: aqua;
+    color: aqua;
+    cursor: pointer;
+  }
+}
+
+.intro {
+  padding: 1rem;
+  width: 96%;
+  margin: 1rem auto;
+  background-color: #252525;
+}
+
+.skill-levels-div {
+  padding: 1rem;
+  background-color: #252525;
+  width: 96%;
+  margin: 1rem auto;
+}
+
+span.basic, span.advanced {
+  width: 6rem;
+  height: 2.5rem;
+  display: inline-block;
+  border: 2px solid #fff;
+  margin-left: 1rem;
+}
+
+span {
+  font-size: 1.2rem;
+  margin-bottom: -0.3rem;
+  margin-top: 1rem;
+}
+
+.basic {
+  background-color: orange;
+  margin-right: 1rem;
+}
+
+.advanced {
+  background-color: green;
+  margin-right: 1rem;
 }

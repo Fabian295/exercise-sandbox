@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ConceptsComponent } from './components/concepts/concepts.component';
 import { CardComponent } from './components/card/card.component';
 import { RxjsComponent } from './components/rxjs/rxjs.component';
+import { TopicService } from './services/topic.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { RxjsComponent } from './components/rxjs/rxjs.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TopicService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

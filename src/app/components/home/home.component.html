@@ -16,14 +16,22 @@
   </div> -->
 
   <ul class="cards">
-    <li  *ngFor="let card of topics;index as i"
+    <li  *ngFor="let card of topics;index as i ; first as isFirst; even as isEven; odd as isOdd; last as isLast"
+
+      [class.is-first2]="isFirst"
+      [class.is-first]="isFirst"
+      [class.is-last]="isLast"
+      [class.is-even]="isEven"
+      [class.is-odd]="isOdd"
       class="card">
-      <app-card (topicSelect)="onTopicSelect($event)"
+      <!-- *ngFor="let card of topics;index as i ; first as isFirst;" -->
+      <app-card
+      (topicSelect)="onTopicSelect($event)"
       [topic]="card"
       [cardIndex]="i + 1"
       >
       </app-card>
-    </li>
+    <!-- </li> -->
     <!-- <li class="card">
       <app-card (topicSelect)="onTopicSelect($event)" [subject]="subTwo"></app-card>
     </li>

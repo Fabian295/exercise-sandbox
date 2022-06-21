@@ -6,7 +6,8 @@
     </div>
     <h2 class="card__title">{{ cardIndex + '. ' + topic.title}}</h2>
     <p class="card__content"  >
-      {{ topic.description }}
+      {{ topic.description.slice(0, 35).concat(' ') }}
+      <span>...</span>
     </p>
     <div class="card__footer">
       <div class="level">

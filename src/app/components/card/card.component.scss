@@ -18,6 +18,7 @@
 
   &__title {
     color: aqua;
+    max-width: 96%;
     text-align: center;
     padding: .5rem;
     font-size: 2rem;
@@ -43,7 +44,9 @@
 
   &__content {
     width: 80%;
-    margin: 1rem auto;
+    max-height: 5rem;
+    margin: 1rem auto 2rem;
+    overflow-y: hidden;
     text-align: center;
     line-height: 1.7;
   }

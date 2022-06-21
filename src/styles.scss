@@ -44,3 +44,17 @@ ul {
   justify-content: space-evenly;
   align-items: center;
 }
+
+li.is-first {
+  border: 20px solid yellow;
+  padding: 1.2rem;
+}
+
+app-card.is-first {
+  border: 2px solid yellow;
+  padding: 1.2rem;
+}
+
+li.is-first2 {
+  border-radius: 1rem 0 1rem 0;
+}

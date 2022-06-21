@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import '../../../../db-data';
-import { Subject } from '../../interfaces/Subject';
+import { Topic } from '../../models/Topic';
 import { ActivatedRoute } from '@angular/router';
 
 
@@ -12,18 +12,18 @@ import { ActivatedRoute } from '@angular/router';
 export class CardComponent implements OnInit {
 
   @Input()
-  topic!: Subject;
+  topic!: Topic;
 
   @Input()
   cardIndex!: number;
 
   @Output()
-  topicSelect = new EventEmitter<Subject>();
+  topicSelect = new EventEmitter<Topic>();
   // card-title:string = Subjects[0].title;
 
   // imgUrl: string = 'assets/logo_ang_bllue-bg.jpg';
 
-  // subjects: Subject[] = [] ;
+  // scoreList = [100,46,27,74,150];
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -31,7 +31,10 @@ export class CardComponent implements OnInit {
 
 
   getStarted() {
-    console.log('event:', 'clicked')
+    // this.scoreList
+    console.log('event:', 'clicked'
+    // , Math.min(...this.scoreList)
+    )
     this.topicSelect.emit(this.topic)
   }
 

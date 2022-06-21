@@ -29,8 +29,9 @@ header {
         font-size: 1.1rem !important;
         margin-right: 1rem;
         width: 100%;
-        text-transform: capitalize;
-        transition: all 350ms ease;
+        // text-transform: capitalize;
+        transition: transform 350ms ease,
+        transform 350ms ease;
 
         &:hover {
           text-transform: uppercase;

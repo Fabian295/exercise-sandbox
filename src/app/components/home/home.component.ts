@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subjects } from 'db-data';
-import { Subject } from 'src/app/interfaces/Subject';
+import { Topic } from 'src/app/models/Topic';
 
 @Component({
   selector: 'app-home',
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   // }
 
 
-  onTopicSelect(subject: Subject) {
+  onTopicSelect(subject: Topic) {
     console.log('cardClick: Bubled to Card!', subject)
   }
 
